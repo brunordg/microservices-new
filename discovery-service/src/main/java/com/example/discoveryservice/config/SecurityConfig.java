@@ -22,7 +22,6 @@ public class SecurityConfig {
     @Value("${eureka.password}")
     private String password;
 
-
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
@@ -38,7 +37,6 @@ public class SecurityConfig {
                 .passwordEncoder(PasswordEncoderFactories.createDelegatingPasswordEncoder()::encode)
                 .username(username)
                 .password(password)
-                .roles("USER").build()
-        );
+                .roles("USER").build());
     }
 }

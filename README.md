@@ -5,7 +5,6 @@ Projeto referente ao estudo sobre microservices, nele vamos abordar diversos tem
 
 
 
-
 ## Instalação
 
 Para o build e gerenciamento de dependência o projeto utiliza o maven
@@ -20,25 +19,35 @@ Lembrando que para a execução dos testes o pré requisito é que o Docker este
 ```bash
   https://testcontainers.com/
 ```
-
-
-    
 ## Stack utilizada
 
 **Back-end:** Java, Spring Boot
 
 **Database:** Postgresql e MongoDB
 
-
 ## Referência
 
- - [Execução dos commits, ferramenta utilizada commitizen](https://commitizen-tools.github.io/)
+- [Execução dos commits, ferramenta utilizada commitizen](https://commitizen-tools.github.io/)
 
- - [Os commits estão seguindo a documentação do conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
-
+- [Os commits estão seguindo a documentação do conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 ## Autores
 
 - [@brunordg](https://www.github.com/brunordg)
+
+
+# Roadmap
+
+### Feat
+
+- **LAPSIS-123**: Adicionado um novo projeto de notificação
+
+## v0.0.1 (2023-07-10)
+
+### Feat
+
+- **LAPSIS-123**: Incluindo o commitizen
+
+
 
 

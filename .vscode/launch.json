@@ -1,0 +1,71 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "tasks": [
+        {
+            "label": "Sleepdelay",
+            "type": "shell",
+            "command": "sleep 6",
+            "windows": {
+                "command": "ping 127.0.0.1 -n 6 > null"
+            },
+            "group": "none",
+            "presentation": {
+                "reveal": "silent",
+                "panel": "new"
+            }
+
+        }
+    ],
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ApiGatewayApplication",
+            "request": "launch",
+            "mainClass": "com.example.apigateway.ApiGatewayApplication",
+            "projectName": "api-gateway"
+        },
+        {
+            "type": "java",
+            "name": "DiscoveryServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.discoveryservice.DiscoveryServiceApplication",
+            "projectName": "discovery-service"
+        },
+        {
+            "type": "java",
+            "name": "InventoryServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.inventoryservice.InventoryServiceApplication",
+            "projectName": "inventory-service"
+        },
+        {
+            "type": "java",
+            "name": "OrderServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.orderservice.OrderServiceApplication",
+            "projectName": "order-service"
+        },
+        {
+            "type": "java",
+            "name": "ProductServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.productservice.ProductServiceApplication",
+            "projectName": "product-service"
+        },
+    ],
+    "compounds": [
+        {
+            "name": "All",
+            "configurations": ["DiscoveryServiceApplication", "ApiGatewayApplication", "InventoryServiceApplication", "OrderServiceApplication", "ProductServiceApplication"]
+        }
+    ]
+}
